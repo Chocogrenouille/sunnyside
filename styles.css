@@ -1,15 +1,19 @@
 body,html {
     padding: 0;
     margin: 0;
-    font-size: 18px;
+    font-size: 16px;
     font-family: 'Barlow', sans-serif;
+}
+
+h1,h2,h4,a,.person {
+    font-family: 'Fraunces', serif;
 }
 
 header {
     background-image: url('./images/desktop/image-header.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    height: 700px;
     color: white;
 }
 
@@ -39,8 +43,16 @@ nav > ul > li {
     text-transform: uppercase;
 }
 
+#contact:hover {
+    background-color: hsl(206, 100%, 93%);
+}
+
+#contact > a {
+    text-decoration: none;
+    color: black
+}
+
 h1 {
-    font-family: 'Fraunces', serif; 
     font-size: 2.5rem;
     letter-spacing: 0.4rem;
     text-transform:uppercase;
@@ -66,13 +78,25 @@ h1 {
     color: hsl(232, 10%, 55%);
 }
 
-.text > h2 {
-    font-family: 'Fraunces', serif; 
+.text > a {
+    text-transform: uppercase;
+    color: black;
 }
 
-.text > a {
-    font-family: 'Fraunces', serif; 
-    text-transform: uppercase;
+#learn-transform {
+    text-decoration: underline 5px hsl(7, 99%, 70%);
+}
+
+#learn-transform:hover {
+    text-decoration: underline 5px hsl(51, 100%, 49%);
+}
+
+#learn-audience:hover {
+    text-decoration: underline 5px hsl(7, 99%, 70%);
+}
+
+#learn-audience {
+    text-decoration: underline 5px hsl(51, 100%, 49%);
 }
 
 .audience {
@@ -82,11 +106,28 @@ h1 {
 
 .text-in-picture{
     display: flex;
-    
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.text-in-picture > div:nth-child(1) {
+    background-image: url("./images/desktop/image-graphic-design.jpg");  
+    width: 50%;
+}   
+
+.text-in-picture > div:nth-child(2) {
+    background-image: url("./images/desktop/image-photography.jpg");
+    width: 50%;
 }
 
 .description > h4 {
-    font-family: 'Fraunces', serif; 
+    font-family: 'Fraunces', serif;
+    font-size: 1.5rem;
+}
+
+.description {
+    padding-top: 400px;
 }
 
 .description > h4, 
@@ -97,7 +138,77 @@ h1 {
     color: hsl(213, 9%, 39%);
 }
 
+.testimonials > h4 {
+    color: hsl(210, 4%, 67%);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    padding: 100px 100px 50px 100px;
+}
+
+.single-testimonials {
+    display: flex;
+    justify-content: space-around;
+    padding-left:180px;
+    padding-right: 180px;
+}
+
 .picture-row {
     display: flex;
 }
 
+.picture-row > img {
+    width: 25%;
+}
+
+section {
+    text-align: center;
+    color: hsl(213, 9%, 39%);
+    padding-left: 50px;
+}
+
+.quote {
+    line-height: 2rem;
+}
+
+.person {
+    color: black;
+    margin: 50px 0 5px 0;
+}
+
+.role {
+    color: hsl(210, 4%, 67%);
+    margin: 5px 0 100px 0;
+}
+
+section > img {
+    border-radius: 50%;
+}
+
+footer {
+    background-color: hsl(167, 41%, 67%);
+}
+
+footer > svg {
+    position: relative;
+    left: 46%;
+    margin: 50px 0px 0px;
+}
+
+footer > ul {
+    list-style-type: none;
+    margin: 0;
+    color: hsl(168, 34%, 41%);
+    display: flex;
+    justify-content: center;
+}
+
+footer > ul > li {
+    margin: 50px 30px 50px 0px;
+}
+
+.social-media-buttons > svg{
+    position: relative;
+    left: 43%;
+    margin: 0px 15px 50px;
+}
