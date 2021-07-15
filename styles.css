@@ -1,5 +1,4 @@
 body,html {
-    padding: 0;
     margin: 0;
     font-size: 16px;
     font-family: 'Barlow', sans-serif;
@@ -18,6 +17,7 @@ header {
 }
 
 .logo {
+    display: inline;
     position: relative;
     top: 20px;
     left: 20px;
@@ -61,8 +61,13 @@ h1 {
 }
 
 .arrow {
+    display: inline;
     position: relative;
     left: 50%;
+}
+
+.picture {
+    height: 600px;
 }
 
 .transform {
@@ -70,7 +75,7 @@ h1 {
 }
 
 .text {
-    margin: 150px;
+    margin: 180px 150px 100px;
     line-height: 2rem;
 }
 
@@ -101,8 +106,8 @@ h1 {
 
 .audience {
     display: flex;
-   
 }
+
 
 .text-in-picture{
     display: flex;
